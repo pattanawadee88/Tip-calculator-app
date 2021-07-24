@@ -42,15 +42,15 @@ input::placeholder{
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    /* width: 100vw; */
     border-radius: 20px;
-    padding: 1.2em;
+    padding: 1.5em;
     margin-top: 2em;
 
 }
 .box{
-    width: 100%; 
-    padding: 0.8em;
+    width: 100%;
+    padding: 2em;
     margin-bottom: 1em;
     /* background-color: blue; */
 }
@@ -73,7 +73,6 @@ button{
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    /* padding: 0.5em; */
     grid-gap: 7px;
     /* background-color: red; */
 }
@@ -82,7 +81,8 @@ button{
     grid-column: 1/3;
 }
 .tip {
-    width: 100%;
+    width: inherit;
+    height: 13vh;
     font-weight: 700;
     border-radius: 3px;
     text-align: center;
@@ -100,7 +100,7 @@ button{
 }
 /* Total-container */
 #total-container{
-    padding: 1em;
+    padding: 2em;
     border-radius: 5px;
     color: white;
     background-color:  hsl(183, 100%, 15%);
@@ -110,8 +110,11 @@ button{
     font-size: 0.5rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0.8em;
+    margin: 0.8em 0;
     align-items: center;
+}
+#total-container p{
+    font-size: 0.6rem;
 }
 #tip-amount, 
 #total-amount{
@@ -120,6 +123,7 @@ button{
 }
 #reset-btn{
     width: 100%;
+    margin-top: 2em;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 5px;
