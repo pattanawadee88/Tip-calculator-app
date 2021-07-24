@@ -19,6 +19,7 @@ input{
     border: none;
     padding: 0.5em;
     width: 100%;
+    text-align: right;
     font-weight: 700;
     /* background-image: url(./images/icon-person.svg); */
     background-repeat: no-repeat;
@@ -29,6 +30,7 @@ input{
 }
 input::placeholder{
     text-align: right;
+    color: hsl(183, 100%, 15%)
 }
 .logo{
     text-align: center;
@@ -61,14 +63,11 @@ button{
 #bill-container input{
     background-image: url(./images/icon-dollar.svg);
 }
-
-
-
-
 /* Num-people */
 #num-people input{
     background-image: url(./images/icon-person.svg);
 }
+/* tTip-container */
 #tip-container{  
     width: 100%;
     box-sizing: border-box;
@@ -99,17 +98,31 @@ button{
     background-color:  hsl(189, 41%, 97%);
     color:  hsl(186, 14%, 43%);
 }
+/* Total-container */
 #total-container{
     padding: 1em;
-    height: 200px;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     background-color:  hsl(183, 100%, 15%);
+}
+#total-container > div{
+    width: 100%; 
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8em;
+    align-items: center;
+}
+#tip-amount, 
+#total-amount{
+    font-size: 0.8rem;
+    color: hsl(172, 67%, 45%);
 }
 #reset-btn{
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
+    border-radius: 5px;
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
 }
