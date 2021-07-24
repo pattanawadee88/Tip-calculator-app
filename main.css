@@ -17,7 +17,7 @@ span{
 }
 input{
     border: none;
-    padding: 0.5em;
+    padding: 1em;
     width: 100%;
     text-align: right;
     font-weight: 700;
@@ -83,7 +83,7 @@ button{
 .tip {
     width: 100%;
     height: 6vh;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     border-radius: 3px;
     text-align: center;
@@ -109,18 +109,18 @@ button{
 }
 #total-container > div{
     width: 100%; 
-    font-size: 0.5rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     margin: 0.8em 0;
     align-items: center;
 }
 #total-container p{
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
 }
 #tip-amount, 
 #total-amount{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     color: hsl(172, 67%, 45%);
 }
 #reset-btn{
