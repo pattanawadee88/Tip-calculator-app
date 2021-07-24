@@ -14,6 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Tip calculator app</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
 </head>
 <body>
   <h1 class="logo">
@@ -21,14 +24,13 @@
   </h1>
 
   <div class="main-app-container">
-    <div class="box" id="bill">
-      <span>Bill</span>
-      <br>
+    <div class="box" id="bill-container">
+      <span class="title">Bill</span>
       <input type="text" placeholder="145" id=""> 
     </div>
 
     <div class="box" id="tip-container">
-      <span>Select Tip %</span>
+      <span class="title">Select Tip %</span>
       <button class="tip" id="tip-1">5%</button>
       <button class="tip" id="tip-2">10%</button>
       <button class="tip" id="tip-3">15%</button>
@@ -38,9 +40,8 @@
     </div>
 
     <div class="box" id="num-people">
-      <span>Number of people</span>
-      <br>
-      <input type="text" placeholder="145" id="">
+      <span class="title">Number of people</span>
+      <input type="text" placeholder="5">
     </div>
 
     <div class="box" >
