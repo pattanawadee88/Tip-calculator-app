@@ -1,12 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: hsl(185, 41%, 84%);
-    margin: 0;
     color:  hsl(186, 14%, 43%);
     font-family: 'Space Mono', monospace;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 span{
+    margin-bottom: 1em;
     font-weight: 700;
+}
+input{
+    border: none;
+    padding: 0.5em;
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
 }
 .logo{
     text-align: center;
@@ -17,38 +28,65 @@ span{
     flex-direction: column;
     width: 100vw;
     border-radius: 20px;
-    box-sizing: border-box;
     padding: 1.2em;
 
 }
-.box-1{
+.box{
     width: 100%; 
+    padding: 0.8em;
+    margin-bottom: 1em;
     /* background-color: blue; */
 }
-
-.box-2{  
+button{
+    padding: 0.3em 0.4em;
+    border: none;
+}
+#tip-container{  
     width: 100%;
-    height: 200px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /* padding: 0.5em; */
+    grid-gap: 7px;
     /* background-color: red; */
 }
-.box-3{  
-    width: 100%;
-    /* background-color: green; */
+
+#tip-container span{
+    grid-column: 1/3;
 }
-.box-4{  
+.tip {
     width: 100%;
-    height: 200px;
-    /* background-color: indigo; */
+    font-weight: 700;
+    border-radius: 3px;
+    text-align: center;
+    color: hsl(189, 41%, 97%);
+    background-color: hsl(183, 100%, 15%);
+}
+.tip:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    
+}
+#custom-tip{
+    background-color:  hsl(189, 41%, 97%);
+    color:  hsl(186, 14%, 43%);
 }
 #total-container{
     padding: 1em;
+    height: 200px;
     border-radius: 20px;
+    color: white;
     background-color:  hsl(183, 100%, 15%);
 }
 #reset-btn{
     width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
 }
+
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

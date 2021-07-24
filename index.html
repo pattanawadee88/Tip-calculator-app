@@ -21,22 +21,29 @@
   </h1>
 
   <div class="main-app-container">
-    <div class="box-1" id="bill">
+    <div class="box" id="bill">
       <span>Bill</span>
       <br>
       <input type="text" placeholder="145" id=""> 
     </div>
-    <div class="box-2" id="tip">
+
+    <div class="box" id="tip-container">
       <span>Select Tip %</span>
+      <button class="tip" id="tip-1">5%</button>
+      <button class="tip" id="tip-2">10%</button>
+      <button class="tip" id="tip-3">15%</button>
+      <button class="tip" id="tip-4">25%</button>
+      <button class="tip" id="tip-5">50%</button>
+      <button class="tip" id="custom-tip">Custom</button>
     </div>
 
-    <div class="box-3" id="num-people">
+    <div class="box" id="num-people">
       <span>Number of people</span>
       <br>
       <input type="text" placeholder="145" id="">
     </div>
 
-    <div class="box-4" >
+    <div class="box" >
       <div id="total-container">
         <div style="width: 100%; height: 50px;  margin-bottom: 0.8em;">Tip</div>
         <div style="width: 100%; height: 50px; ">Total</div>
@@ -45,7 +52,6 @@
     </div>
 
   </div>
-  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
