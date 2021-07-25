@@ -138,3 +138,23 @@ button{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width: 800px){
+    .main-app-container{
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 10px;
+        padding: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
+    #total-container{
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+    .box{
+        padding: 0.1em;
+        margin-bottom: 0;
+ 
+    }
+}
