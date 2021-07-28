@@ -15,6 +15,9 @@ span{
     /* margin-bottom: 1.1em; */
     font-weight: 700;
 }
+input,button{
+    cursor: pointer;
+}
 input{
     border: none;
     font-size: 1.2rem;
@@ -31,7 +34,8 @@ input{
 }
 input::placeholder{
     text-align: right;
-    color: hsl(183, 100%, 15%)
+    margin-right: 0.6em;
+
 }
 .logo{
     text-align: center;
@@ -45,7 +49,7 @@ input::placeholder{
     flex-direction: column;
     /* width: 100vw; */
     border-radius: 20px;
-    /* padding: 1em; */
+    padding: 1em;
     margin-top: 2em;
 
 }
@@ -68,7 +72,10 @@ button{
 #num-people input{
     background-image: url(./images/icon-person.svg);
 }
-/* tTip-container */
+#custom-tip::placeholder{
+    text-align: center;
+}
+/* Tip-container */
 #tip-container{  
     width: 100%;
     box-sizing: border-box;
@@ -116,9 +123,7 @@ button{
     margin: 0.8em 0;
     align-items: center;
 }
-#total-container p{
-    /* font-size: 0.6rem; */
-}
+
 #tip-amount, 
 #total-amount{
     font-size: 1.3rem;
@@ -127,14 +132,14 @@ button{
 #reset-btn{
     width: 100%;
     margin-top: 2em;
+    font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 5px;
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
 }
-
-
+#reset-btn:hover{ background-color: hsla(172, 62%, 48%);}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -145,16 +150,34 @@ button{
         margin: 0 auto;
         display: grid;
         grid-gap: 10px;
+        column-gap: 30px;
         padding: 2em;
         grid-template-columns: 1fr 1fr;
+    }
+    #tip-container{  
+        /* width: 100%;
+        box-sizing: border-box;
+        display: grid; */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #tip-container span{
+        grid-column: 1/4;
     }
     #total-container{
         grid-column: 2;
         grid-row: 1 / 4;
+        display: flex;
+        flex-direction: column;  
+    }
+    #reset-btn{
+        font-size: 1rem;
     }
     .box{
         padding: 0.1em;
         margin-bottom: 0;
- 
     }
+    input{
+        padding: 0;
+    }
+
 }
