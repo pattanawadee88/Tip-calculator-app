@@ -144,9 +144,9 @@ button{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 930px){
     .main-app-container{
-        width: 60%;
+        width: 65%;
         margin: 0 auto;
         display: grid;
         grid-gap: 10px;
