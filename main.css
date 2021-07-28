@@ -9,10 +9,8 @@ body{
     margin-top: 3em;
     background-color: hsl(185, 41%, 84%);
     color:  hsl(186, 14%, 43%);
-    /* font-size: 1rem; */
 }
 span{
-    /* margin-bottom: 1.1em; */
     font-weight: 700;
 }
 input,button{
@@ -25,7 +23,6 @@ input{
     width: 100%;
     text-align: right;
     font-weight: 700;
-    /* background-image: url(./images/icon-person.svg); */
     background-repeat: no-repeat;
     background-position:  10px;
     background-size: 8px;
@@ -82,7 +79,6 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 7px;
-    /* background-color: red; */
 }
 
 #tip-container span{
@@ -155,9 +151,6 @@ button{
         grid-template-columns: 1fr 1fr;
     }
     #tip-container{  
-        /* width: 100%;
-        box-sizing: border-box;
-        display: grid; */
         grid-template-columns: 1fr 1fr 1fr;
     }
     #tip-container span{
