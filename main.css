@@ -72,6 +72,9 @@ button{
 #custom-tip::placeholder{
     text-align: center;
 }
+#custom-tip{
+    padding: 0;
+}
 /* Tip-container */
 #tip-container{  
     width: 100%;
