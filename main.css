@@ -146,7 +146,7 @@ button{
 
 @media only screen and (min-width: 800px){
     .main-app-container{
-        width: 75%;
+        width: 60%;
         margin: 0 auto;
         display: grid;
         grid-gap: 10px;
