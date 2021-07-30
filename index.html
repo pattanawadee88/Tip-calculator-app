@@ -25,12 +25,12 @@
 
   <div class="main-app-container">
     <div class="box" id="bill-container">
-      <span class="title">Bill</span>
-      <input type="text" placeholder="145" id="" required> 
+      <p class="title">Bill</p>
+      <input type="number"  id="input-bill" onblur="getValue()" required> 
     </div>
 
     <div class="box" id="tip-container">
-      <span class="title">Select Tip %</span>
+      <p class="title">Select Tip %</p>
       <button class="tip" id="tip-1">5%</button>
       <button class="tip" id="tip-2">10%</button>
       <button class="tip" id="tip-3">15%</button>
@@ -40,20 +40,20 @@
     </div>
 
     <div class="box" id="num-people">
-      <span class="title">Number of people</span>
-      <input type="text" placeholder="5" required>
+      <p class="title">Number of people</p>
+      <input id="input-person" type="text" onblur="getValue()"  required>
     </div>
 
     <div class="box" id="total-container">
         <div>
-          <p>Tip Amount<br><span style="color: hsl(186, 14%, 43%);">/person</span></p>
-          <span id="tip-amount">$4.25</span>
+          <p>Tip Amount<br><span>/person</span></p>
+          <p id="tip-amount">$4.25</p>
         </div>
         <div>
-          <p>Total<br><span style="color: hsl(186, 14%, 43%);">/person</span></p>
-          <span id="total-amount">$32.79</span>
+          <p>Total<br><span>/person</span></p>
+          <p id="total-amount">$32.79</p>
         </div>
-        <button id="reset-btn">Reset</button>
+        <button id="reset-btn" >Reset</button>
       </div>
   </div>
   
@@ -62,12 +62,7 @@
     Coded by <a href="#">Pattanawadee</a>.
   </div>
 
-  <script>
-    // const btn = document.querySelector('button');
-    // btn.addEventListener('click', function(){
-    //   document.querySelector('#tip-1').style.backgroundColor = 'yellow';
-    // })
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
 
