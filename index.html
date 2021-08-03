@@ -36,7 +36,7 @@
       <button class="tip" id="tip-3" onclick="doCal(115/100)">15%</button>
       <button class="tip" id="tip-4" onclick="doCal(125/100)">25%</button>
       <button class="tip" id="tip-5" onclick="doCal(150/100)">50%</button>
-      <input class="tip" id="custom-tip" placeholder="Custom">
+      <input type="number" class="tip" id="custom-tip" placeholder="Custom" onchange="custom(parseInt(this.value))">
     </div>
 
     <div class="box" id="num-people">

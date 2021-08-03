@@ -3,6 +3,7 @@ const inputNumPerson = document.getElementById('input-person');
 const resetBtn = document.getElementById('reset-btn');
 const tipTotalAmountPerPerson = document.getElementById('tip-amount');
 const totalAmountPerPerson = document.getElementById('total-amount');
+const customTip = document.getElementById('custom-tip');
 
 // Calculate tip
 const doCal = (tip) => {
@@ -21,6 +22,14 @@ const doCal = (tip) => {
     }    
 }
 
+// A custom tip function
+function custom(value){
+    let tipValue = (100+value)/100;
+    // console.log(tip)
+    doCal(tipValue);
+    // let tip = (value+100)/(100);
+    
+}
 // Clear input value
 resetBtn.addEventListener('click', ()=>{
     inputBill.value = '';
