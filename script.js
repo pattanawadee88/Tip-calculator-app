@@ -11,6 +11,7 @@ const doCal = (tip) => {
         inputNumPerson.style.fontSize = '0.9rem';
         inputNumPerson.placeholder = 'Please enter number of person';
     }else {
+        inputNumPerson.style.border = 'none';
         const total = (inputBill.value * (tip));
         const totalPerPerson = total/inputNumPerson.value;
         const tipPerPerson = total-(inputBill.value);
