@@ -1,3 +1,4 @@
+"use strict"
 const inputBill = document.getElementById('input-bill');
 const inputNumPerson = document.getElementById('input-person');
 const resetBtn = document.getElementById('reset-btn');
@@ -12,6 +13,7 @@ const doCal = (tip) => {
         inputNumPerson.style.fontSize = '0.9rem';
         inputNumPerson.placeholder = 'Please enter number of person';
     }else {
+        inputNumPerson.placeholder = '';
         inputNumPerson.style.border = 'none';
         const total = (inputBill.value * (tip));
         const totalPerPerson = total/inputNumPerson.value;
@@ -34,6 +36,9 @@ function custom(value){
 resetBtn.addEventListener('click', ()=>{
     inputBill.value = '';
     inputNumPerson.value = '';
+    totalAmountPerPerson.innerHTML = '';
+    tipTotalAmountPerPerson.innerHTML = '';
+    customTip.value = '';
 } )
 /* 
 1. get values from input 
