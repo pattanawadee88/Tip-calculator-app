@@ -17,7 +17,7 @@ const doCal = (tip) => {
         inputNumPerson.style.border = 'none';
         const total = (inputBill.value * (tip));
         const totalPerPerson = total/inputNumPerson.value;
-        const tipPerPerson = total-(inputBill.value);
+        const tipPerPerson = (total-(inputBill.value))/inputNumPerson.value;
         
         totalAmountPerPerson.innerHTML = `$`+ Math.round(totalPerPerson);
         tipTotalAmountPerPerson.innerHTML = `$` + Math.round(tipPerPerson);
