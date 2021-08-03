@@ -26,32 +26,32 @@
   <div class="main-app-container">
     <div class="box" id="bill-container">
       <p class="title">Bill</p>
-      <input type="number"  id="input-bill" required> 
+      <input type="number"  id="input-bill"  required> 
     </div>
 
     <div class="box" id="tip-container">
       <p class="title">Select Tip %</p>
-      <button class="tip" id="tip-1" onclick="tipAmount(5/100)">5%</button>
-      <button class="tip" id="tip-2" onclick="tipAmount(10/100)">10%</button>
-      <button class="tip" id="tip-3" onclick="tipAmount(15/100)">15%</button>
-      <button class="tip" id="tip-4" onclick="tipAmount(25/100)">25%</button>
-      <button class="tip" id="tip-5" onclick="tipAmount(50/100)">50%</button>
+      <button class="tip" id="tip-1" onclick="doCal(105/100)">5%</button>
+      <button class="tip" id="tip-2" onclick="doCal(110/100)">10%</button>
+      <button class="tip" id="tip-3" onclick="doCal(115/100)">15%</button>
+      <button class="tip" id="tip-4" onclick="doCal(125/100)">25%</button>
+      <button class="tip" id="tip-5" onclick="doCal(150/100)">50%</button>
       <input class="tip" id="custom-tip" placeholder="Custom">
     </div>
 
     <div class="box" id="num-people">
       <p class="title">Number of people</p>
-      <input id="input-person" type="text" required>
+      <input id="input-person" type="text"  required>
     </div>
 
     <div class="box" id="total-container">
         <div>
           <p>Tip Amount<br><span>/person</span></p>
-          <p id="tip-amount"></p>
+          <p id="tip-amount">$0</p>
         </div>
         <div>
           <p>Total<br><span>/person</span></p>
-          <p id="total-amount"></p>
+          <p id="total-amount">$0</p>
         </div>
         <button id="reset-btn">Reset</button>
       </div>
