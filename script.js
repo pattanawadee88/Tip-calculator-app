@@ -1,4 +1,8 @@
-"use strict"
+"use strict";
+window.addEventListener('DOMContentLoaded', ()=>{
+    console.log(document.readyState)
+})
+// console.log(document.readyState);
 const inputBill = document.getElementById('input-bill');
 const inputNumPerson = document.getElementById('input-person');
 const resetBtn = document.getElementById('reset-btn');
@@ -24,13 +28,11 @@ const doCal = (tip) => {
     }    
 }
 
+
 // A custom tip function
 function custom(value){
     let tipValue = (100+value)/100;
-    // console.log(tip)
-    doCal(tipValue);
-    // let tip = (value+100)/(100);
-    
+    doCal(tipValue);    
 }
 // Clear input value
 resetBtn.addEventListener('click', ()=>{
@@ -50,4 +52,4 @@ resetBtn.addEventListener('click', ()=>{
 
 
 
-*/
+*/console.log(document.readyState);
