@@ -40,7 +40,11 @@
     </div>
 
     <div class="box" id="num-people">
-      <p class="title">Number of people</p>
+      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <p class="title">Number of people</p> 
+        <p id="error-p" style="display: none; color: red; font-size: 0.7rem;">Can't be zero</p>
+      </div>
+      
       <input id="input-person" type="text"  required>
     </div>
 
