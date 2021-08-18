@@ -29,6 +29,20 @@ Users should be able to:
 ### Links
 - Live Site URL: [Click to View the Website](https://pattanawadee88.github.io/Tipcalculatorapp/)
 
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vanilla Javascript
+  - DOM Elements
+  - DOM EventListener
+  - "use strict"
+  - ES6: let and const keywords, and arrow function
 <!-- ### Screenshot
 
 ![](./screenshot.jpg)
