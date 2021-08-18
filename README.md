@@ -25,6 +25,10 @@ Users should be able to:
 
 ### ScreenShot
 ![](./images/screenshot.png)
+
+### Links
+- Live Site URL: [Click to View the Website](https://pattanawadee88.github.io/Tipcalculatorapp/)
+
 <!-- ### Screenshot
 
 ![](./screenshot.jpg)
