@@ -74,6 +74,7 @@ button{
     padding: 0.3em 0.4em;
     border: none;
 }
+
 /* Box #bill */
 #bill-container input{
     background-image: url(./images/icon-dollar.svg);
@@ -112,7 +113,7 @@ button{
     background-color: hsl(183, 100%, 15%);
 }
 .tip:focus,
-.tip:hover{
+.tip:active{
     color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     

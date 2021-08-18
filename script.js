@@ -11,6 +11,7 @@ const totalAmountPerPerson = document.getElementById('total-amount');
 const customTip = document.getElementById('custom-tip');
 const error = document.getElementById('error-p');
 
+
 // Calculate tip
 const doCal = (tip) => {
     if(inputNumPerson.value === "" || inputNumPerson.value === null ){
@@ -43,6 +44,8 @@ resetBtn.addEventListener('click', ()=>{
     tipTotalAmountPerPerson.innerHTML = '';
     customTip.value = '';
 } )
+
+
 /* 
 1. get values from input 
 2. user selects tip
