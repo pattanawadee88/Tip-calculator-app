@@ -9,13 +9,10 @@ body{
     /* margin-top: 3em; */
     background-color: hsl(185, 41%, 84%);
     color:  hsl(186, 14%, 43%);
+   
 }
 main{
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    margin-top: 3em;
 }
 .title{
     font-weight: 700;
@@ -58,7 +55,7 @@ span{
     text-align: center;
 }
 .logo img{
-    width: 50px;
+    width: 100px;
 }
 .main-app-container{
     background-color: hsl(0, 0%, 100%);
@@ -174,7 +171,7 @@ button{
 @media only screen and (min-width: 995px){
     .main-app-container{
         width: 65%;
-        margin: 0 auto;
+        margin: 2.2em auto;
         display: grid;
         grid-gap: 10px;
         column-gap: 30px;
