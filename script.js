@@ -1,15 +1,12 @@
 "use strict";
-window.addEventListener('DOMContentLoaded', ()=>{
-    console.log(document.readyState)
-})
 // console.log(document.readyState);
 const inputBill = document.getElementById('input-bill');
-const inputNumPerson = document.getElementById('input-person');
+const inputNumPerson = document.querySelector('#input-person');
 const resetBtn = document.getElementById('reset-btn');
 const tipTotalAmountPerPerson = document.getElementById('tip-amount');
 const totalAmountPerPerson = document.getElementById('total-amount');
 const customTip = document.getElementById('custom-tip');
-const error = document.getElementById('error-p');
+const error = document.querySelector('.error');
 
 
 // Calculate tip
@@ -19,6 +16,8 @@ const doCal = (tip) => {
         error.style.display = 'block';
        
     }else {
+        error.style.display = 'none';
+    }
         inputNumPerson.placeholder = '';
         inputNumPerson.style.border = 'none';
         const total = (inputBill.value * (tip));
@@ -27,7 +26,7 @@ const doCal = (tip) => {
         
         totalAmountPerPerson.innerHTML = `$`+ Math.round(totalPerPerson);
         tipTotalAmountPerPerson.innerHTML = `$` + Math.round(tipPerPerson);
-    }    
+       
 }
 
 
@@ -53,7 +52,4 @@ resetBtn.addEventListener('click', ()=>{
 3. do calculation
 4. display on tip amount
 5. clear when reset btn clicked
-
-
-
-*/console.log(document.readyState);
+*/
